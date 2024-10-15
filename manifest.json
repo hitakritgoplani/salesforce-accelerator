@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "Salesforce Accelerator",
+    "version": "1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup":"popup.html",
+        "default_icon": {
+            "128": "./images/icon-128.png",
+            "16": "./images/icon-16.png",
+            "48": "./images/icon-48.png"
+        }
+    },
+    "host_permissions": [
+        "https://*.force.com/*"
+    ],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./scripts/content.js"]
+        }
+    ],
+    "commands": {
+        "new_record": {
+            "description": "Add New Record to current Object",
+            "suggested_key": {
+                "linux": "Alt+N",
+                "mac": "Alt+N",
+                "windows": "Alt+N"
+            }
+        }
+    },
+    "description": "Boost productivity with seamless hotkeys for Salesforce navigation and tasks."
+}
