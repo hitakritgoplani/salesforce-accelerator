@@ -5,7 +5,7 @@ Welcome to **Salesforce Accelerator**! This extension provides powerful hotkeys 
 ## Shortcuts
 
 - **Create New record**: Press `Alt + N` to quickly create a new record for standard and custom objects.
-- **Open App Launcher**: Press `Alt + A` to quickly open app launcher from any where.
+- **Open App Launcher**: Press `Alt + A` to quickly open/close app launcher from any where.
 - 
 
 ## Future Updates
