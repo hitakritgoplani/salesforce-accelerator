@@ -46,6 +46,14 @@
                 "mac": "Alt+S",
                 "windows": "Alt+S"
             }
+        },
+        "open_dev_console": {
+            "description":"Open Dev Console",
+            "suggested_key": {
+                "linux": "Alt+C",
+                "mac": "Alt+C",
+                "windows": "Alt+C"
+            }
         }
     },
     "description": "Boost productivity with seamless hotkeys for Salesforce navigation and tasks."
