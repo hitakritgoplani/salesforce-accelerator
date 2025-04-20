@@ -14,4 +14,12 @@ chrome.commands.onCommand.addListener(async command => {
             }
         });
     }
+
+    if (command === 'open_setup') {
+        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+            if (tabs[0]) {
+                chrome.tabs.sendMessage(tabs[0].id, { action: "openSetup" });
+            }
+        });
+    }
 });

@@ -32,4 +32,10 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             console.error('Error opening app launcher');
         }
     }
+    if (request.action === "openSetup") {
+        let orgDomain = new URL(currentUrl).origin;
+        console.log('Organization domain:', orgDomain);
+        let setupUrl = `${orgDomain}/lightning/setup/SetupOneHome/home`;
+        window.open(setupUrl, '_blank');
+    }
 });
