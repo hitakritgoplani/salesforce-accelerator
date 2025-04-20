@@ -4,7 +4,7 @@ Welcome to **Salesforce Accelerator**! This extension provides powerful hotkeys 
 
 ## Shortcuts
 
-- **Create New Account record**: Press `Alt + N` to quickly create a new account record.
+- **Create New record**: Press `Alt + N` to quickly create a new record for standard and custom objects.
 - More shortcuts coming soon! Stay tuned for updates.
 
 ## Future Updates
