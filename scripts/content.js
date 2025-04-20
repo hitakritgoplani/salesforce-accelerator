@@ -4,11 +4,9 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     let objName = match && match[1] ? match[1] : '';
         
     if (request.action === "clickNewButton") {
-        console.log('in new record case');
         let listItem = document.querySelector(`li[data-target-selection-name='sfdc:StandardButton.${objName}.New']`);
 
         if (listItem) {
-            console.log('List item found');
             let anchorTag = listItem.querySelector('a');
             if (anchorTag) {
                 anchorTag.click();
@@ -17,6 +15,21 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             }
         } else {
             console.error(`'Could not find ${objName}.New'`);
+        }
+    }
+    if (request.action === "openAppLauncher") {
+        console.log('in openAppLauncher');
+        let appLauncher = document.querySelector('div.appLauncher');
+
+        if (appLauncher) {
+            let button = appLauncher.querySelector('button');
+            if (button) {
+                button.click();
+            } else {
+                console.error('Error opening app launcher');
+            }
+        } else {
+            console.error('Error opening app launcher');
         }
     }
 });

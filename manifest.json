@@ -30,6 +30,14 @@
                 "mac": "Alt+N",
                 "windows": "Alt+N"
             }
+        },
+        "app_launcher": {
+            "description":"Open App Launcher",
+            "suggested_key": {
+                "linux": "Alt+A",
+                "mac": "Alt+A",
+                "windows": "Alt+A"
+            }
         }
     },
     "description": "Boost productivity with seamless hotkeys for Salesforce navigation and tasks."
