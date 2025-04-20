@@ -6,12 +6,7 @@
         "service_worker": "background.js"
     },
     "action": {
-        "default_popup":"popup.html",
-        "default_icon": {
-            "128": "./images/icon-128.png",
-            "16": "./images/icon-16.png",
-            "48": "./images/icon-48.png"
-        }
+        "default_popup":"popup.html"
     },
     "host_permissions": [
         "https://*.force.com/*"
