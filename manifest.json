@@ -34,9 +34,9 @@
         "app_launcher": {
             "description":"Open App Launcher",
             "suggested_key": {
-                "linux": "Alt+/",
-                "mac": "Alt+/",
-                "windows": "Alt+/"
+                "linux": "Alt+A",
+                "mac": "Alt+A",
+                "windows": "Alt+A"
             }
         }
     },
