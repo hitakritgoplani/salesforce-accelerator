@@ -38,6 +38,14 @@
                 "mac": "Alt+A",
                 "windows": "Alt+A"
             }
+        },
+        "open_setup": {
+            "description":"Open Setup",
+            "suggested_key": {
+                "linux": "Alt+S",
+                "mac": "Alt+S",
+                "windows": "Alt+S"
+            }
         }
     },
     "description": "Boost productivity with seamless hotkeys for Salesforce navigation and tasks."
