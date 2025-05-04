@@ -1,4 +1,4 @@
-# ☁️ Salesforce Accelerator (Chrome Extension)
+# <img src="icon.png" alt="Your Image Description" width="40"> Salesforce Accelerator (Chrome Extension)
 
 Enhance your Salesforce productivity with powerful hotkeys and customizable quick links! This extension streamlines navigation and task management, making your workflow faster and more efficient.
 
