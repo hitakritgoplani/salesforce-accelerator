@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    padding: 40px;
+    background-color: #080b12; 
+    color: #ccfaff; 
+    overflow-x: hidden; 
+    margin: 0;
+}
+
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    background: rgba(30, 40, 55, 0.7); 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 225, 255, 0.3); 
+    position: relative;
+    z-index: 1; 
+}
+
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 180, 255, 0.1) 20%, rgba(173, 80, 255, 0.1) 80%, transparent 100%);
+    z-index: -2;
+    pointer-events: none;
+    mix-blend-mode: color-dodge;
+}
+
+body::after {
+    background: linear-gradient(to bottom, transparent 0%, rgba(255, 100, 220, 0.1) 20%, rgba(80, 180, 255, 0.1) 80%, transparent 100%);
+}
+
+h2, h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: #00e5ff; 
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.accent-text {
+    text-align: left;
+    color: #ffcc6e;
+}
+
+.add-shortcut-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.holo-text{
+    font-size: 2.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.holo-input {
+    padding: 12px;
+    border: 1px solid #456990; 
+    border-radius: 8px;
+    background: rgba(40, 55, 75, 0.8); 
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em; 
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 225, 255, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.holo-input:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 15px rgba(0, 225, 255, 0.4);
+}
+
+.holo-button {
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #00bfff 0%, #007bff 100%); 
+    color: #080b12; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+}
+
+.holo-button:hover {
+    background: linear-gradient(135deg, #ffcc6e 0%, #ffcc6e 100%); 
+    box-shadow: 0 0 20px #ffcc6e 0.7;
+}
+
+#shortcuts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #ccfaff;
+}
+
+#shortcuts-table th,
+#shortcuts-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    font-size: 1.2rem; 
+}
+
+#shortcuts-table th {
+    font-weight: bold;
+    color: #00e5ff;
+}
+
+#shortcuts-table thead tr th:nth-child(1) {
+    width: 1/3; 
+}
+
+#shortcuts-table thead tr th:nth-child(2) {
+    width: 1/3; 
+}
+
+#shortcuts-table thead tr th:nth-child(3) {
+    width: 1/3; 
+    text-align: center; 
+}
+
+#shortcuts-table tbody tr td:nth-child(3) {
+    text-align: center; 
+}
+
+#shortcuts-table tbody tr:hover {
+    background-color: rgba(0, 225, 255, 0.05);
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    color: #ff4d4d; 
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.remove-button:hover {
+    background: rgba(255, 77, 77, 0.15);
+    box-shadow: 0 0 12px rgba(255, 77, 77, 0.4);
+}
+
+.remove-button i {
+    font-size: 1.2em;
+    text-shadow: 0 0 8px #ff4d4d;
+}
+
+.blob-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -3;
+    opacity: 0.6;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.5;
+    mix-blend-mode: screen;
+}
+
+.blob1 {
+    width: 500px;
+    height: 500px;
+    background: rgba(0, 229, 255);
+    top: -200px;
+    left: -200px;
+    animation: blobAnimation1 20s infinite alternate ease-in-out;
+}
+
+.blob2 {
+    width: 600px;
+    height: 600px;
+    background: rgb(115, 105, 41);
+    bottom: -200px;
+    right: -200px;
+    animation: blobAnimation2 25s infinite alternate ease-in-out;
+}
+
+.blob3 {
+    width: 450px;
+    height: 450px;
+    background: rgba(173, 80, 255);
+    top: 200px;
+    right: 10%;
+    animation: blobAnimation3 18s infinite alternate ease-in-out;
+}
+
+.blob4 {
+    width: 550px;
+    height: 550px;
+    background: rgba(0, 123, 255);
+    bottom: 10%;
+    left: 5%;
+    animation: blobAnimation4 22s infinite alternate ease-in-out;
+}
+
+@keyframes blobAnimation1 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(100px, 100px) scale(1.2);
+    }
+    100% {
+        transform: translate(50px, 200px) scale(0.8);
+    }
+}
+
+@keyframes blobAnimation2 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(-150px, -100px) scale(1.3);
+    }
+    100% {
+        transform: translate(-50px, -200px) scale(0.9);
+    }
+}
+
+@keyframes blobAnimation3 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(-100px, 100px) scale(1.1);
+    }
+    100% {
+        transform: translate(-200px, 50px) scale(0.8);
+    }
+}
+
+@keyframes blobAnimation4 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(150px, -80px) scale(1.2);
+    }
+    100% {
+        transform: translate(80px, -150px) scale(0.9);
+    }
+}
