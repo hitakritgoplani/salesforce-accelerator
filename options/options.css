@@ -64,6 +64,15 @@ h3 {
     margin-bottom: 30px;
 }
 
+.help{
+    color: white;
+
+}
+
+.link:hover{
+    color: #ffcc6e;
+}
+
 .holo-text{
     font-size: 2.8em;
     font-weight: bold;
