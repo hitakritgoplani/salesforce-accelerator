@@ -18,9 +18,13 @@ Enhance your Salesforce productivity with powerful hotkeys and customizable quic
 
 ## 🛠️ Usage Guide
 
-1.  **Accessing Options:** Click the **Salesforce Accelerator** extension icon in your Chrome toolbar. The **Options Page** will open in a new tab.
+1.  **Installation:**
+    * Download the extension files.
+    * Open Chrome's Extensions page: `chrome://extensions/`.
+    * Enable **"Developer mode"** (top right).
+2.  **Accessing Options:** Click the **Salesforce Accelerator** extension icon in your Chrome toolbar. The **Options Page** will open in a new tab.
 
-2.  **Managing Quick Links (on the Options Page):**
+3.  **Managing Quick Links (on the Options Page):**
     * **Adding a New Link:**
         * In the "Key" field, type a unique keyword for this shortcut.
         * In the "Name" field, enter a descriptive name.
@@ -28,7 +32,7 @@ Enhance your Salesforce productivity with powerful hotkeys and customizable quic
         * Click the **Add** button.
     * **Removing a Link:** Find your saved shortcuts in the list and click the **"Remove"** button next to the one you want to delete.
 
-3.  **Using Hotkeys:** Once installed, the hotkeys (`Alt + N` and `Alt + A`) are active on any Salesforce page.
+4.  **Using Hotkeys:** Once installed, the hotkeys (`Alt + N` and `Alt + A`) are active on any Salesforce page.
 
 ## 🔮 Future Enhancements
 
