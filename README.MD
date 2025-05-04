@@ -22,6 +22,8 @@ Enhance your Salesforce productivity with powerful hotkeys and customizable quic
     * Download the extension files.
     * Open Chrome's Extensions page: `chrome://extensions/`.
     * Enable **"Developer mode"** (top right).
+     * Click **"Load unpacked"** (top left) and select the extension's folder.
+     
 2.  **Accessing Options:** Click the **Salesforce Accelerator** extension icon in your Chrome toolbar. The **Options Page** will open in a new tab.
 
 3.  **Managing Quick Links (on the Options Page):**
