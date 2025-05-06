@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const row = shortcutsTableBody.insertRow();
 
             const shortcutCell = row.insertCell();
-            shortcutCell.textContent = `Shift + ${key.toUpperCase()}`;
+            shortcutCell.textContent = `Alt + Shift + ${key.toUpperCase()}`;
 
             const nameCell = row.insertCell();
             nameCell.textContent = shortcut.name;
