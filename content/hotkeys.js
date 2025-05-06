@@ -7,7 +7,7 @@ chrome.storage.sync.get('userShortcuts', function(data) {
 
 function handleHotkey(keyData) {
     // Check if Shift is pressed AND the pressed key is a single character
-    if (keyData.shiftKey && keyData.key.length === 1) {
+    if (keyData.shiftKey && keyData.altKey && keyData.key.length === 1) {
         const currentUrl = window.location.href;
         const orgDomain = new URL(currentUrl).origin;
         const shortcutInfo = shortcutMap[keyData.key.toLowerCase()]; // Get the shortcut object

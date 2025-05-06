@@ -3,7 +3,8 @@ document.addEventListener('keydown', function(event) {
     const keyData = {
         key: event.key,
         code: event.code,
-        shiftKey: event.shiftKey
+        shiftKey: event.shiftKey,
+        altKey: event.altKey
     };
     handleHotkey(keyData); // Pass keyData to handleHotkey
 });
