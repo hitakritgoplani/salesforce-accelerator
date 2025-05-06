@@ -8,7 +8,7 @@ Enhance your Salesforce productivity with powerful hotkeys and customizable quic
 
 * **🔗 Customizable Quick Links:** Create personalized shortcuts to specific Salesforce pages:
     * **Simplified Link Input:** Enter the Salesforce URL path *after* your domain (e.g., `/lightning/o/Account/list`).
-    * **Unique Key:** Assign a memorable **single lowercase letter (a-z)** to your link. This key, when combined with `Alt + Shift`, will be your custom shortcut (e.g., if you enter `l`, the shortcut will be `Alt + Shift + l`).
+    * **Unique Key:** Assign a memorable **single letter (a-z)** to your link. This key, when combined with `Alt + Shift`, will be your custom shortcut (e.g., if you enter `l`, the shortcut will be `Alt + Shift + l`).
     * **Descriptive Name:** Give your shortcut a friendly name for quick recognition.
     * The extension intelligently adds your current Salesforce domain to these links for instant access. Manage your quick links on the **Options Page**.
 
