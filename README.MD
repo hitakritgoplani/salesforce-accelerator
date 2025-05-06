@@ -8,14 +8,14 @@ Enhance your Salesforce productivity with powerful hotkeys and customizable quic
 
 * **🔗 Customizable Quick Links:** Create personalized shortcuts to specific Salesforce pages:
     * **Simplified Link Input:** Enter the Salesforce URL path *after* your domain (e.g., `/lightning/o/Account/list`).
-    * **Unique Key:** Assign a memorable key to your link. This key, when combined with `Alt + Shift`, will be your custom shortcut (e.g., if you enter `L`, the shortcut will be `Alt + Shift + L`).
+    * **Unique Key:** Assign a memorable **single lowercase letter (a-z)** to your link. This key, when combined with `Alt + Shift`, will be your custom shortcut (e.g., if you enter `l`, the shortcut will be `Alt + Shift + l`).
     * **Descriptive Name:** Give your shortcut a friendly name for quick recognition.
     * The extension intelligently adds your current Salesforce domain to these links for instant access. Manage your quick links on the **Options Page**.
 
 * **⌨️ Powerful Hotkeys:** Speed up common Salesforce actions with these keyboard shortcuts:
     * `Alt + N`: **Create New Record** for any standard or custom object.
     * `Alt + A`: **Toggle App Launcher** open or closed from anywhere in Salesforce.
-    * **Custom Quick Link Hotkeys:** Access your customized quick links using the shortcut `Alt + Shift + [Your Assigned Key]`. For example, if you assigned the key `C` to your "Contacts" list view, the shortcut would be `Alt + Shift + C`.
+    * **Custom Quick Link Hotkeys:** Access your customized quick links using the shortcut `Alt + Shift + [Your Assigned Key]`. For example, if you assigned the key `c` to your "Contacts" list view, the shortcut would be `Alt + Shift + c`.
 
 ## 🛠️ Usage Guide
 
@@ -29,7 +29,7 @@ Enhance your Salesforce productivity with powerful hotkeys and customizable quic
 
 3.  **Managing Quick Links (on the Options Page):**
     * **Adding a New Link:**
-        * In the "Key" field, type a unique single character key for this shortcut (e.g., `C`, `Q`, `1`).
+        * In the "Key" field, type a unique **single lowercase letter (a-z)** for this shortcut (e.g., `c`, `q`, `z`).
         * In the "Name" field, enter a descriptive name.
         * In the "Link" field, enter the Salesforce URL path *without* your domain.
         * Click the **Add** button.
