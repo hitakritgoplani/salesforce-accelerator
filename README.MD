@@ -7,9 +7,9 @@ Enhance your Salesforce productivity with powerful hotkeys and customizable quic
 * **🚀 Direct Options Page Access:** Clicking the extension icon now opens the **Options Page** directly in a new tab for easy configuration.
 
 * **🔗 Customizable Quick Links:** Create personalized shortcuts to specific Salesforce pages:
-    * **Simplified Link Input:** Enter the Salesforce URL path *after* your domain (e.g., `/lightning/o/Account/list`).
     * **Unique Key:** Assign a memorable **single letter (a-z)** to your link. This key, when combined with `Alt + Shift`, will be your custom shortcut (e.g., if you enter `l`, the shortcut will be `Alt + Shift + l`).
-    * **Descriptive Name:** Give your shortcut a friendly name for quick recognition.
+    * **Feature selection** Select the salesforce feature from the dropdown (like **Setup**, **Flows**, etc.).
+    * Click **Add**.
     * The extension intelligently adds your current Salesforce domain to these links for instant access. Manage your quick links on the **Options Page**.
 
 * **⌨️ Powerful Hotkeys:** Speed up common Salesforce actions with these keyboard shortcuts:
@@ -30,8 +30,7 @@ Enhance your Salesforce productivity with powerful hotkeys and customizable quic
 3.  **Managing Quick Links (on the Options Page):**
     * **Adding a New Link:**
         * In the "Key" field, type a unique **single lowercase letter (a-z)** for this shortcut (e.g., `c`, `q`, `z`).
-        * In the "Name" field, enter a descriptive name.
-        * In the "Link" field, enter the Salesforce URL path *without* your domain.
+        * Select the salesforce feature from the dropdown (like **Setup**, **Flows**, etc.).
         * Click the **Add** button.
     * **Removing a Link:** Find your saved shortcuts in the list and click the **"Remove"** button next to the one you want to delete.
 
@@ -39,4 +38,4 @@ Enhance your Salesforce productivity with powerful hotkeys and customizable quic
 
 ## 🔮 Future Enhancements
 
-We're continuously working to improve Salesforce Accelerator! Soon you will not be required to add any links manually, everything will be taken care of by us, you will just have to select the key and what feature of Salesforce you want to navigate to! Your suggestions and contributions are welcome!
+We're continuously working to improve Salesforce Accelerator! We will be adding more features to the dropdown soon. Your suggestions and contributions are welcome!
