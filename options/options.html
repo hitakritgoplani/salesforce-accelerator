@@ -22,8 +22,13 @@
             <h2 class="accent-text">add a new shortcut<span class="help">&nbsp;(quick add guide:&nbsp;<a target="_blank" class="help link" href="https://github.com/hitakritgoplani/salesforce-accelerator/blob/master/README.MD">readme first</a>)</span></h2>
             <div class="add-shortcut-form">
                 <input type="text" id="new-key" maxlength="1" placeholder="Key (a-z)" class="holo-input">
-                <input type="text" id="new-name" placeholder="Name" class="holo-input">
-                <input type="text" id="new-link" placeholder="URL" class="holo-input">
+                <select id="new-picklist-value" class="holo-input">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Setup">Setup</option>
+                    <option value="Flows">Flows</option>
+                    <option value="Dev Console">Dev Console</option>
+                    <option value="Object Manager">Object Manager</option>
+                </select>
                 <button id="add-shortcut-button" class="holo-button save-button"><strong>add</strong></button>
             </div>
         </div>
@@ -44,6 +49,6 @@
             </table>
         </div>
     </div>
-    <script src="options.js"></script>
+    <script type="module" src="options.js"></script>
 </body>
 </html>

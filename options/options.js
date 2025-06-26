@@ -1,7 +1,8 @@
+import {endpointsMap} from './endpoints.js';
+
 document.addEventListener('DOMContentLoaded', function() {
     const newKeyInput = document.getElementById('new-key');
-    const newNameInput = document.getElementById('new-name');
-    const newLinkInput = document.getElementById('new-link');
+    const newValue = document.getElementById('new-picklist-value');
     const addShortcutButton = document.getElementById('add-shortcut-button');
     const shortcutsTableBody = document.querySelector('#shortcuts-table tbody');
 
@@ -52,24 +53,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     addShortcutButton.addEventListener('click', function() {
         const key = newKeyInput.value.trim().toLowerCase();
-        const name = newNameInput.value.trim();
-        const link = newLinkInput.value.trim();
+        const picklistValue = newValue.value;
 
-        if (key && key.length === 1 && /[a-z]/.test(key) && name && link && !shortcuts[key]) {
-            shortcuts[key] = { name: name, link: link };
+        if (key && key.length === 1 && /[a-z]/.test(key) && picklistValue && !shortcuts[key]) {
+            shortcuts[key] = { name: picklistValue, endpoint: endpointsMap[picklistValue] };
             newKeyInput.value = '';
-            newNameInput.value = '';
-            newLinkInput.value = '';
+            newValue.value = '';
             renderShortcuts();
             saveShortcutsToStorage();
         } else if (shortcuts[key]) {
             alert(`Shortcut for key "${key.toUpperCase()}" already exists.`);
         } else if (!/[a-z]/.test(key) || key.length !== 1) {
             alert('Please enter a single letter (a-z) for the shortcut key.');
-        } else if (!name) {
-            alert('Please enter a name for the shortcut.');
-        } else if (!link) {
-            alert('Please enter a link for the shortcut.');
         }
     });
 });
