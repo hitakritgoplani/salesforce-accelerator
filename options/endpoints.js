@@ -1,6 +1,11 @@
 export const endpointsMap = {
-    'Setup': '/lightning/setup/SetupOneHome/home',
-    'Flows': '/lightning/setup/Flows/home',
+    'Setup': 'SetupOneHome',
+    'Flows': 'Flows',
     'Dev Console': '/_ui/common/apex/debug/ApexCSIPage',
-    'Object Manager': '/lightning/setup/ObjectManager/home'
+    'Object Manager': 'ObjectManager',
+    'Permission Sets': 'PermSets',
+    'Permission Set Groups': 'PermSetGroups',
+    'Profiles': 'Profiles',
+    'Custom Permissions': 'CustomPermissions',
+    'Users': 'ManageUsers'
 };
