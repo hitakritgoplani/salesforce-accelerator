@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const picklistValue = newValue.value;
 
         if (key && key.length === 1 && /[a-z]/.test(key) && picklistValue && !shortcuts[key]) {
-            shortcuts[key] = { name: picklistValue, endpoint: endpointsMap[picklistValue] };
+            shortcuts[key] = { name: picklistValue, endpoint: '/lightning/setup/' + endpointsMap[picklistValue] + '/home' };
             newKeyInput.value = '';
             newValue.value = '';
             renderShortcuts();
