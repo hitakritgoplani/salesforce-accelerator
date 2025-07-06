@@ -2,10 +2,10 @@
     "manifest_version": 3,
     "name": "Salesforce Accelerator",
     "icons":{
-        "16": "icon.png",
-        "32": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
+        "16": "./assests/icon.png",
+        "32": "./assests/icon.png",
+        "48": "./assests/icon.png",
+        "128": "./assests/icon.png"
     },
     "version": "1.0",
     "background": {
