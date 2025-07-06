@@ -2,6 +2,8 @@
 
 Enhance your Salesforce productivity with powerful hotkeys and customizable quick links! This extension streamlines navigation and task management, making your workflow faster and more efficient.
 
+<video src="./assets/demo.mp4" width="320" height="240" controls></video>
+
 ## ✨ Key Features
 
 * **🚀 Direct Options Page Access:** Clicking the extension icon now opens the **Options Page** directly in a new tab for easy configuration.

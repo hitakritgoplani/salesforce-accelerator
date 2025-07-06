@@ -3,7 +3,7 @@ function handleNewRecord() {
     let match = currentUrl.match(/o\/([^\/]+)\//);
     let objName = match && match[1] ? match[1] : '';
 
-    let listItem = document.querySelector(`li[data-target-selection-name='sfdc:StandardButton.${objName}.New']`);
+    let listItem = objName === 'Contact' ? document.querySelector(`li[data-target-selection-name='sfdc:StandardButton.${objName}.NewContact']`) : document.querySelector(`li[data-target-selection-name='sfdc:StandardButton.${objName}.New']`);
 
     if (listItem) {
         let anchorTag = listItem.querySelector('a');
