@@ -1,6 +1,6 @@
-import {endpointsMap} from './endpoints.js';
+import { endpointsMap } from './endpoints.js';
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const newKeyInput = document.getElementById('new-key');
     const newValue = document.getElementById('new-picklist-value');
     const addShortcutButton = document.getElementById('add-shortcut-button');
@@ -8,7 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let shortcuts = {};
 
-    chrome.storage.sync.get('userShortcuts', function(data) {
+    const navigationDropDown = document.getElementById("new-picklist-value");
+    for (let key in endpointsMap) {
+        let option = document.createElement("option");
+        option.setAttribute('value', key);
+
+        let optionText = document.createTextNode(key);
+        option.appendChild(optionText);
+        
+        navigationDropDown.appendChild(option);
+    }
+
+    chrome.storage.sync.get('userShortcuts', function (data) {
         shortcuts = data.userShortcuts || {};
         renderShortcuts();
     });
@@ -36,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const removeButtons = document.querySelectorAll('.remove-button');
         removeButtons.forEach(button => {
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
                 const keyToRemove = this.dataset.key;
                 delete shortcuts[keyToRemove];
                 renderShortcuts();
@@ -46,17 +57,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function saveShortcutsToStorage() {
-        chrome.storage.sync.set({ 'userShortcuts': shortcuts }, function() {
+        chrome.storage.sync.set({ 'userShortcuts': shortcuts }, function () {
             console.log('Shortcuts saved.');
         });
     }
 
-    addShortcutButton.addEventListener('click', function() {
+    addShortcutButton.addEventListener('click', function () {
         const key = newKeyInput.value.trim().toLowerCase();
         const picklistValue = newValue.value;
 
         if (key && key.length === 1 && /[a-z]/.test(key) && picklistValue && !shortcuts[key]) {
-            shortcuts[key] = { name: picklistValue, endpoint: '/lightning/setup/' + endpointsMap[picklistValue] + '/home' };
+            shortcuts[key] = picklistValue === 'Dev Console' ? { name: picklistValue, endpoint: endpointsMap[picklistValue] } : { name: picklistValue, endpoint: '/lightning/setup/' + endpointsMap[picklistValue] + '/home' };
             newKeyInput.value = '';
             newValue.value = '';
             renderShortcuts();
