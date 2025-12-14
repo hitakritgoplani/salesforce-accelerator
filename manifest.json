@@ -2,10 +2,10 @@
     "manifest_version": 3,
     "name": "Salesforce Accelerator",
     "icons":{
-        "16": "./assests/icon.png",
-        "32": "./assests/icon.png",
-        "48": "./assests/icon.png",
-        "128": "./assests/icon.png"
+        "16": "./assets/logo.png",
+        "32": "./assets/logo.png",
+        "48": "./assets/logo.png",
+        "128": "./assets/logo.png"
     },
     "version": "1.0",
     "background": {
@@ -14,7 +14,9 @@
     "action": {},
     "options_page": "./options/options.html",
     "host_permissions": [
-        "https://*.force.com/*"
+        "https://*.force.com/*",
+        "https://*.salesforce.com/*",
+        "https://*.salesforce-setup.com/*"
     ],
     "permissions": [
         "storage",
@@ -23,7 +25,7 @@
     ],
     "content_scripts": [
         {
-            "matches": ["https://*.lightning.force.com/*", "https://*.my.salesforce.com/*"],
+            "matches": ["https://*.lightning.force.com/*", "https://*.my.salesforce.com/*", "https://*.salesforce-setup.com/*"],
             "js": [
                 "./content/hotkeys.js",
                 "./content/newRecord.js",
